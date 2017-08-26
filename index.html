@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetApp</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-animate/angular-animate.js"></script>
+    <script src="node_modules/angular-sanitize/angular-sanitize.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+    <link rel="stylesheet" href="assets/css/login/login.css">
+    <link rel="stylesheet" href="assets/css/registerationModule/registerationModule.css">
+
+    <script src="app.js"></script>
+    <script src="login/login.js"></script>
+    <script src="registerationModule/registerationModule.js"></script>
+    <script src="registerationModule/petRegisteration/petRegisteration.js"></script>
+    <script src="registerationModule/ownerRegisteration/ownerRegisteration.js"></script>
+</head>
+
+<body data-ng-app="petApp" data-ng-controller="petAppController">
+
+    <!--<a ui-sref="login">login</a>-->
+    <div ui-view></div>
+
+</body>
+
+</html>

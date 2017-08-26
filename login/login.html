@@ -1,0 +1,26 @@
+<div class="container" data-ng-controller="loginController">
+    <div class="row">
+        <div class="form_bg">
+            <form name="loginForm" action="/" novalidate>
+                <h2 class="text-center">Login Page</h2>
+                <br/>
+
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="user id" id="name" data-ng-model="userName" required/>
+                    <p ng-show="loginForm.userName.$invalid && !loginForm.name.$pristine" class="help-block">Please enter User Name.</p>
+                </div>
+
+                <div class="form-group ">
+                    <input type="password" class="form-control" data-ng-model="passWord" placeholder="password" required/>
+                    <p ng-show="loginForm.name.$invalid && !loginForm.name.$pristine" class="help-block">Please enter password.</p>
+                </div>
+                <br/>
+
+                <div class="align-center">
+                    <button type="button" data-ng-click="loginClick()" class="btn btn-primary" ng-disabled="loginForm.$invalid ">Login</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>

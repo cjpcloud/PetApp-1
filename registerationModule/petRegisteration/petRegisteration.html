@@ -1,0 +1,34 @@
+<p>Animal Category:</p>
+
+<select data-ng-model="selectedAnimalCategory" ng-options="x for x in animalCategoryList"></select>
+
+<p>Name:</p>
+
+<input type="text" data-ng-model="petName" required>
+
+<p>Breed:</p>
+
+<input type="text" data-ng-model="petBreed">
+
+<p>Sex:</p>
+
+<input type="text" data-ng-model="petGender" required>
+
+<p>Color:</p>
+
+<input type="text" data-ng-model="petColor" required>
+
+<p>DOB:</p>
+
+<p class="input-group" class="datePickerDiv">
+    <input type="text" class="form-control" uib-datepicker-popup="{{format}}" ng-model="dt" is-open="popup1.opened" datepicker-options="dateOptions" ng-required="true" close-text="Close" alt-input-formats="altInputFormats" />
+    <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open1()"><i class="glyphicon glyphicon-calendar"></i></button>
+          </span>
+</p>
+
+<button ng-click="calculateAge()">Calculate Age:</button>
+
+<p>{{petAge}}</p>
+
+<button data-ng-click="savePetDetails()">save</button>
